@@ -11,7 +11,7 @@ const translate = new Translate(document.querySelector("#word").value, document.
 const ui = new UI();
 function translateWord(e) {
   translate.changeParametres(document.getElementById("word").value, document.getElementById("language").value);
-  translate.translateWord(function(err, repsonse) {
+  translate.translateWord(function(err, response) {
     if (err) {
       console.log(err);
     } else {
